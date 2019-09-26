@@ -1,1 +1,22 @@
-<h1 class="display-4">{{ title }}</h1>
+<app-navbar></app-navbar>
+
+<carousel [noPause]="false" [interval]="3000">
+  <slide>
+    <img src="https://picsum.photos/id/10/1920/500" alt="First slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>First slide label</h3>
+    </div>
+  </slide>
+  <slide>
+    <img src="https://picsum.photos/id/165/1920/500" alt="Second slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Second slide label</h3>
+    </div>
+  </slide>
+  <slide>
+    <img src="https://picsum.photos/id/1060/1920/500" alt="Third slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Third slide label</h3>
+    </div>
+  </slide>
+</carousel>
