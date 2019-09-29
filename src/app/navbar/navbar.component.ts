@@ -8,6 +8,8 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class NavbarComponent implements OnInit {
 
+  authenticated: boolean = false;
+
   modalRef: BsModalRef;
 
   constructor(private modalService: BsModalService) {}

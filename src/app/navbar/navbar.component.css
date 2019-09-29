@@ -4,7 +4,11 @@ nav {
     box-shadow:         0 2px 5px rgba(0, 0, 0, .37);
     z-index: 100;
 }
-nav .navbar-brand {
-    background-color: #999;
-    width: 245px;
+.login-button,
+.registration-button {
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
