@@ -15,34 +15,11 @@
     <!-- TODO: Bejelentkezés kiszervezése külön komponensbe -->
     <!-- TODO: Regisztáció kiszervezése külön komponensbe -->
     <div *ngIf="!authenticated" class="button-container">
-      <div [ngClass]="'login-button'" (click)="openModal(loginModal)">Bejelentkezés</div>
-      <div [ngClass]="'registration-button'" (click)="openModal(registrationModal)">Regisztráció</div>
+      <app-login></app-login>
+      <app-registration></app-registration>
     </div>
 
     <div *ngIf="authenticated" [ngClass]="'login-button'" (click)="openModal(template)">Profilom</div>
   </div>
 </nav>
 
-<ng-template #loginModal>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Login Modal</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    This is a modal.
-  </div>
-</ng-template>
-
-<ng-template #registrationModal>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Registration Modal</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    This is a modal.
-  </div>
-</ng-template>

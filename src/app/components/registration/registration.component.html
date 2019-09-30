@@ -1,0 +1,15 @@
+<div [ngClass]="'registration-button'" (click)="openModal(registrationModal)">Regisztráció</div>
+
+<ng-template #registrationModal>
+  <div class="modal-header d-block text-center">
+    <h4 class="modal-title">
+      Regisztráció
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </h4>
+  </div>
+  <div class="modal-body">
+    This is a modal.
+  </div>
+</ng-template>

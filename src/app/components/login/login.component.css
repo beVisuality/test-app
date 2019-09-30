@@ -1,0 +1,38 @@
+.login-button{
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.modal-dialog.login-modal .modal-header {
+    border-bottom: none;
+}
+.modal-dialog.login-modal .modal-body {
+    padding: 1rem 3rem;
+}
+.modal-dialog.login-modal .modal-body input {
+    outline: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0 .2rem;
+}
+.modal-dialog.login-modal .modal-footer {
+    border-top: none;
+}
+.modal-dialog.login-modal button[type="submit"] {
+    width: 100%;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: rgb(0,212,255);
+    background:    -moz-linear-gradient(90deg, rgba(0,212,255,1) 35%, rgba(0,0,237,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,212,255,1) 35%, rgba(0,0,237,1) 100%);
+    background:         linear-gradient(90deg, rgba(0,212,255,1) 35%, rgba(0,0,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d4ff",endColorstr="#0000ed",GradientType=1);
+}

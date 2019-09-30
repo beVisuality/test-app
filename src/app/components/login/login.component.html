@@ -1,0 +1,27 @@
+<div [ngClass]="'login-button'" (click)="openModal(loginModal)">Bejelentkezés</div>
+
+<ng-template #loginModal>
+  <div class="modal-header d-block text-center">
+    <h4 class="modal-title">
+      Bejelentkezés
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </h4>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Írd ide az email címed!" />
+        <small id="emailHelp" class="form-text text-muted">Sohasem osztjuk meg az email címedet senkivel.</small>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="forgotPassword"
+          placeholder="Írd ide a jelszavad!">
+        <small id="forgotPassword" class="form-text text-muted"><a href="#">Elfelejtettem a jelszavamat.</a></small>
+      </div>
+      <button type="submit" class="btn btn-primary">Belépés</button>
+    </form>
+  </div>
+</ng-template>
